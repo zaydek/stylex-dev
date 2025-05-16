@@ -395,9 +395,10 @@ To be clear: This is a poor man's solution to quickly validate ideas and minimiz
 
 ## Limitations
 
-- Covers the 90% use case: `stylex.create`, `stylex.props`, `stylex.keyframes`.
-- Basic support for pseudo-classes (e.g., `:hover`, `:focus`)
-- ‼️ Deoptimized ‼️ This is not intended for production!
+- Covers only the 90% use case: `stylex.keyframes`, `stylex.create`, and `stylex.props`.
+- Support is limited to React, though it may technically work with other libraries (untested).
+- Limited support for pseudo-classes (e.g., `:hover`, `:focus`), though others may work (untested).
+- ‼️ DEOPTIMIZED ‼️ This is not intended for production!
 
 ## Future
 
