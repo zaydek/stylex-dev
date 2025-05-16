@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+  <head>
+    <title>StyleX React Prototype</title>
+    <!-- Include React/React DOM -->
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <!-- Include Babel (necessary for JSX transpilation) -->
+    <script src="https://unpkg.com/@babel/standalone@7/babel.min.js"></script>
+    <!-- Include the shim -->
+    <script src="https://unpkg.com/stylex-dev@0.0.4/stylex-dev.umd.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="text/babel">
+      // Make StyleX a global reference, similar to import * as stylex from "@stylexjs/stylex";
+      const stylex = window.stylex;
+
+      // Define a keyframe animation using stylex.keyframes
+      const fadeIn = stylex.keyframes({
+        "0%": { opacity: 0 },
+        "100%": { opacity: 1 },
+      });
+
+      // Define styles using stylex.create
+      const styles = stylex.create({
+        container: {
+          padding: 20,
+          backgroundColor: "#f0f0f0",
+          animationName: fadeIn,
+          animationDuration: "1s",
+        },
+        button: {
+          padding: 10,
+          backgroundColor: "#007bff",
+          color: "white",
+          ":hover": {
+            default: null,
+            backgroundColor: "#0056b3",
+          },
+        },
+      });
+
+      // Create a simple React component
+      const App = () => (
+        <div {...stylex.props(styles.container)}>
+          <button {...stylex.props(styles.button)}>Click Me</button>
+        </div>
+      );
+
+      // Render the React component
+      const root = ReactDOM.createRoot(document.getElementById("root"));
+      root.render(<App />);
+    </script>
+  </body>
+</html>

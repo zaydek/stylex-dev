@@ -10,7 +10,10 @@ To be clear: This is a poor man's solution to quickly validate ideas and minimiz
 - Handles [`stylex.props`](https://stylexjs.com/docs/api/javascript/props/) for applying styles, including pseudo-classes (e.g., `:hover`, `:focus`).
 - Implements [`stylex.keyframes`](https://stylexjs.com/docs/api/javascript/keyframes/) for CSS animations.
 
-## Basic Example With Comments
+## Basic Example
+
+<small>This is also provided as source code [here](/examples/basic.html).</small><br>
+<small>This is also provided as a hosted web demo [here](https://68271e09ee75fc38a25addb6--stylex-dev.netlify.app/basic.html).</small>
 
 ```html
 <!DOCTYPE html>
@@ -72,9 +75,14 @@ To be clear: This is a poor man's solution to quickly validate ideas and minimiz
 ```
 
 > [!TIP]
-> Add the above to your favorite AI chat app's system prompt so you can quickly prototype and validate ideas in the browser! This should work in most AI apps that support artifacts like [Claude](https://www.anthropic.com/claude), [ChatGPT](https://chatgpt.com/), and [Grok](https://www.x.ai/grok).
+> Add something like the above to your favorite AI chat app's system prompt so you can quickly prototype and validate ideas in the browser! This should work in most AI apps that support artifacts like [Claude](https://www.anthropic.com/claude), [ChatGPT](https://chatgpt.com/), and [Grok](https://www.x.ai/grok).
+>
+> Here is an [example prompt](https://gist.github.com/zaydek/af6c69491f3cd6f1f1b835fc3941e799) to get you started. YMMV.
 
-## Comprehensive Example With Skeleton Loader and LocalStorage Persistence
+## Comprehensive Example
+
+<small>This is also provided as source code [here](/examples/comprehensive.html).</small><br>
+<small>This is also provided as a hosted web demo [here](https://68271e09ee75fc38a25addb6--stylex-dev.netlify.app/comprehensive.html).</small>
 
 ```html
 <!DOCTYPE html>
@@ -380,6 +388,11 @@ To be clear: This is a poor man's solution to quickly validate ideas and minimiz
 </html>
 ```
 
+> [!TIP]
+> Add something like the above to your favorite AI chat app's system prompt so you can quickly prototype and validate ideas in the browser! This should work in most AI apps that support artifacts like [Claude](https://www.anthropic.com/claude), [ChatGPT](https://chatgpt.com/), and [Grok](https://www.x.ai/grok).
+>
+> Here is an [example prompt](https://gist.github.com/zaydek/af6c69491f3cd6f1f1b835fc3941e799) to get you started. YMMV.
+
 ## Limitations
 
 - Covers the 90% use case: `stylex.create`, `stylex.props`, `stylex.keyframes`.
@@ -388,7 +401,7 @@ To be clear: This is a poor man's solution to quickly validate ideas and minimiz
 
 ## Future
 
-If useful, I may add support for APIs like [`stylex.defineVars`](https://stylexjs.com/docs/api/javascript/defineVars/) and [`stylex.createTheme`](https://stylexjs.com/docs/api/javascript/createTheme/) to enhance prototyping.
+If useful, I may add support for APIs like [`stylex.defineVars`](https://stylexjs.com/docs/api/javascript/defineVars/) and [`stylex.createTheme`](https://stylexjs.com/docs/api/javascript/createTheme/), etc. to better close the gap.
 
 ## License
 
