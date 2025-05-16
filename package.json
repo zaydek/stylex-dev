@@ -1,0 +1,11 @@
+{
+  "name": "stylex-dev",
+  "version": "0.0.4",
+  "main": "stylex-dev.umd.js",
+  "files": [
+    "stylex-dev.umd.js"
+  ],
+  "devDependencies": {
+    "prettier": "^3.5.3"
+  }
+}
